@@ -74,17 +74,18 @@ This experiment uses the **inset microstrip line feed** (or coaxial probe feed, 
 
 ## Design Specifications
 
-| Parameter | Value |
-|---|---|
-| Resonant frequency, f_r | ______ GHz |
-| Dielectric constant, ε_r | ______ (e.g., 4.4 for FR-4, 2.2 for RT/Duroid) |
-| Substrate height, h | ______ mm |
-| Patch width, W | ______ mm |
-| Patch length, L | ______ mm |
-| Ground plane dimensions, L_g × W_g | ______ mm |
-| Feed type | Microstrip inset feed / Coaxial probe feed |
-| Feed line width (50 Ω) | ______ mm |
-| Feed point / inset depth | ______ mm |
+| Parameter                          |                 Value |
+| ---------------------------------- | --------------------: |
+| Resonant frequency \(f_r\)         |               2.4 GHz |
+| Dielectric constant \(\epsilon_r\) |                   4.4 |
+| Substrate height \(h\)             |                1.6 mm |
+| Patch width \(W\)                  |              37.26 mm |
+| Patch length \(L\)                 |              28.95 mm |
+| Ground plane \(L_g \times W_g\)    |      38.55 × 46.86 mm |
+| Feed type                          | Inset microstrip feed |
+| Feed line width                    |                3.0 mm |
+| Inset depth                        |                  8 mm |
+
 
 ---
 
@@ -120,7 +121,15 @@ This experiment uses the **inset microstrip line feed** (or coaxial probe feed, 
 
 ## Observations
 
-*(Include your own table / plots relevant to the experiment.)*
+| S.No | Frequency (GHz) |  S11 (dB) |     VSWR | Gain (dBi) |
+| ---: | --------------: | --------: | -------: | ---------: |
+|    1 |            2.20 |      -8.5 |     2.20 |        5.1 |
+|    2 |            2.30 |     -13.8 |     1.52 |        5.7 |
+|    3 |            2.35 |     -19.6 |     1.23 |        6.0 |
+|    4 |        **2.40** | **-25.4** | **1.11** |    **6.2** |
+|    5 |            2.45 |     -18.7 |     1.26 |        6.1 |
+|    6 |            2.50 |     -12.4 |     1.63 |        5.8 |
+|    7 |            2.60 |      -7.5 |     2.48 |        5.3 |
 
 
 
@@ -128,13 +137,19 @@ This experiment uses the **inset microstrip line feed** (or coaxial probe feed, 
 
 
 * S11 vs frequency
-*(Include your own graph)*
+
+<img width="960" height="540" alt="S11 vs Frequency (1)" src="https://github.com/user-attachments/assets/788f1ea1-fdf1-4c4d-be60-2e7b72e6f3a4" />
+
 
 * VSWR vs frequency
-*(Include your own graph)*
+
+<img width="960" height="540" alt="VSWR vs Frequency (1)" src="https://github.com/user-attachments/assets/23264dc4-7098-4921-8d0c-e2265715ff6d" />
+
 
 * 2-D E-plane and H-plane radiation patterns
-*(Include your own graph)*
+
+<img width="393" height="538" alt="Screenshot 2026-09-23 211851" src="https://github.com/user-attachments/assets/50324206-e22a-4587-a35e-9428042b487f" />
+
 
 
 ---
@@ -149,16 +164,16 @@ This experiment uses the **inset microstrip line feed** (or coaxial probe feed, 
 
 ## Result
 
-Resonant Frequency = GHz  
+Resonant Frequency = 2.4 GHz  
 
-Return loss = dB
+Return loss = -25.4 dB
 
-VSWR = 
+VSWR = 1.11
 
-Gain = 
+Gain = 6.2 dBi
 
 
 ## Conclusion
 
-A rectangular microstrip patch antenna was designed and simulated at ______ GHz using Ansys HFSS.
+A rectangular microstrip patch antenna was designed and simulated at 2.4 GHz using Ansys HFSS.
 
